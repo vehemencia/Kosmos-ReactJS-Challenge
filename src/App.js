@@ -27,7 +27,7 @@ const App = () => {
         width: 100,
         height: 100,
         color: COLORS[Math.floor(Math.random() * COLORS.length)],
-        // backgroundImage: `url(${selectedImage})`,
+        backgroundImage: `url(${selectedImage})`,
         updateEnd: true,
       },
     ]);
@@ -102,6 +102,7 @@ const Component = ({
   height,
   index,
   color,
+  backgroundImage,
   id,
   setSelected,
   isSelected = false,
@@ -116,6 +117,7 @@ const Component = ({
     height,
     index,
     color,
+    backgroundImage,
     id,
   });
 
@@ -140,7 +142,7 @@ const Component = ({
       left,
       width: newWidth,
       height: newHeight,
-      color,
+      backgroundImage
     });
 
     // ACTUALIZAR NODO REFERENCIA
@@ -189,7 +191,7 @@ const Component = ({
         left: absoluteLeft,
         width: newWidth,
         height: newHeight,
-        color,
+        color: { backgroundImage },
       },
       true
     );
@@ -207,7 +209,7 @@ const Component = ({
           left: left,
           width: width,
           height: height,
-          background: color
+          background: backgroundImage
         }}
         onClick={() => setSelected(id)}
       />
@@ -223,6 +225,7 @@ const Component = ({
             width,
             height,
             color,
+            backgroundImage,
           });
         }}
         onResize={onResize}

@@ -1,8 +1,6 @@
 1. Los componentes no deben de salirse del div con id "parent" al arrastrarse (Listo)
 
-2. Cada componente debe de tener una imagen única, la cual con estilos propios, no debe salir del componente al que se le hace resize y deben de tener un fit diferente "cover", "contain", etc. 
-  
-  **esta se obtiene de un fetch a la api "https://jsonplaceholder.typicode.com/photos"** (Se obtiene la url, se muestra en consola, también se agrega al componente cada que se genera pero al moverse vuelve a negro)
+2. Cada componente debe de tener una imagen única, la cual con estilos propios, no debe salir del componente al que se le hace resize y deben de tener un fit diferente "cover", "contain", etc. **Esta se obtiene de un fetch a la api "https://jsonplaceholder.typicode.com/photos"** (Se obtiene la url, se muestra en consola, también se agrega al componente, al hacer resize cambia a negro)
 
 3. Se debe de mantener la selección correctamente al hacer resize o drag, desde cualquiera de los 8 puntos (es decir, debe abarcar el componente mismo, no debe de estar abarcando cosas fuera de el) **Referencia del comportamiento que se debe corregir (Video 1)**
 
